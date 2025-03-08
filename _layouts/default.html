@@ -34,32 +34,18 @@
           <a href="{{ site.github.owner_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
 	  {% endif %}
 	{% endif %}
-         <style> 
-		  a { 
-			  color: #1a0dab; 
-		     text-decoration: none; !important;
-		    } 
-		  a:hover 
-		  { 
-			  text-decoration: underline; !important;
-		  } 
-		  a:visited 
-		  { 
-			  color: #660099; !important;
-		  } 
-	    </style>
-	
-	</section>
-        
-	      
-	      <hr>
-         
-	      
+        </section>
+        <hr>
         <section id="main_content">
-          
           {{ content }}
         </section>
 
+        <footer>
+        {% if site.github.is_project_page %}
+          {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
+        {% endif %}
+         
+        </footer>
 
       </div>
     </div>
