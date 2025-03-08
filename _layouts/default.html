@@ -35,12 +35,22 @@
 	  {% endif %}
 	{% endif %}	
         </section>
-	      <style>  a {color: blue;} 
-	       a:hover {
-      color: blue;  /* Change this to your desired hover color */
-      text-decoration: underline; /* Add underline on hover, if desired */
-         }
-	      </style>
+	      /* Стили для непосещенных ссылок (как в Google Search) */
+a {
+  color: #1a0dab; /* Синий цвет Google для ссылок */
+  text-decoration: none; /* Убираем подчеркивание по умолчанию */
+  font-family: arial, sans-serif; /* Шрифт как у Google*/
+}
+
+/* Стили для наведения курсора (hover) */
+a:hover {
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+/* Стили для посещенных ссылок (как в Google Search) */
+a:visited {
+  color: #681da8; /* Фиолетовый цвет Google для посещенных ссылок */
+}
 	      <hr>
         <section id="main_content">
           {{ content }}
