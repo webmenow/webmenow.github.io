@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset='utf-8'>
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-{% seo %}
+    {% seo %}
     {% include head-custom.html %}
-  </head>
 
-  <body>
+    <style>
+        /*  Google Search Link Styles (Inside <style> tag for internal CSS) */
+        a {
+            color: #1a0dab;  /* Google's link blue */
+            text-decoration: none;
+            font-family: arial, sans-serif;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        a:visited {
+            color: #681da8;  /* Google's visited link purple */
+        }
+    </style>
+</head>
+
+<body>
     <div id="container">
-      <div class="inner">
+        <div class="inner">
 
-        <header>
-          <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-        </header>
-        <section id="downloads" class="clearfix">
-          {% if site.show_downloads %}
-          <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          {% endif %}
-	{% if site.github.public %}
-	  {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
-	  {% else %}
-          <a href="{{ site.github.owner_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
-	  {% endif %}
-	{% endif %}	
-        </section>
-	      /* Стили для непосещенных ссылок (как в Google Search) */
-a {
-  color: #1a0dab; /* Синий цвет Google для ссылок */
-  text-decoration: none; /* Убираем подчеркивание по умолчанию */
-  font-family: arial, sans-serif; /* Шрифт как у Google*/
-}
+            <header>
+                <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+                <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+            </header>
 
-/* Стили для наведения курсора (hover) */
-a:hover {
-  text-decoration: underline; /* Добавляем подчеркивание при наведении */
-}
+            <section id="downloads" class="clearfix">
+                {% if site.show_downloads %}
+                <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
+                <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+                {% endif %}
 
-/* Стили для посещенных ссылок (как в Google Search) */
-a:visited {
-  color: #681da8; /* Фиолетовый цвет Google для посещенных ссылок */
-}
-	      <hr>
-        <section id="main_content">
-          {{ content }}
-        </section>
+                {% if site.github.public %}
+                    {% if site.github.is_project_page %}
+                    <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
+                    {% else %}
+                    <a href="{{ site.github.owner_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
+                    {% endif %}
+                {% endif %}
+            </section>
 
-        <footer>
-      <h2>TA</h2>
-        </footer>
+            <hr>
 
-      </div>
+            <section id="main_content">
+                {{ content }}
+            </section>
+
+            <footer>
+                <h2>TA</h2>
+            </footer>
+
+        </div>
     </div>
-  </body>
+</body>
 </html>
