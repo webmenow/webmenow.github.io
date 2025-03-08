@@ -37,12 +37,19 @@
         </section>
         <hr>
         <section id="main_content">
-          <style> a { color: #1a0dab; text-decoration: none; } a:hover { text-decoration: underline; } a:visited { color: #660099; } </style>
+          <style> 
+		  a { color: #1a0dab; text-decoration: none; } 
+		  a:hover { text-decoration: underline; } 
+		  a:visited { color: #660099; } 
+	  </style>
           {{ content }}
         </section>
 
         <footer>
-        <a href="https://youtu.be/dQw4w9WgXcQ">TA</a>
+        {% if site.github.is_project_page %}
+          {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
+        {% endif %}
+		<a href="https://youtu.be/dQw4w9WgXcQ">TA</a>
         </footer>
 
       </div>
