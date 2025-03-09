@@ -8,4 +8,3 @@ Ici, l'innovation est notre quotidien.
 <h2><a href="lien vers X">X</a></h2>
 <h2><a href="lien vers YouTube">YouTube</a></h2>
 <h2><a href="lien vers email">mail</a></h2>
-<h2><a href="lien vers page Autres>Découvrir d'Autres Façons</a></h2>
