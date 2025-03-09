@@ -1,5 +1,5 @@
-<h2><a href="//youtu.be/dQw4w9WgXcQ" title="GROWTH HACKING">GROWTH HACKING</a></h2>
-TA: Votre Croissance, Notre Priorité.
+<h2><a href="//youtu.be/dQw4w9WgXcQ" title="GROWTH HACKING">TA:GROWTH HACKING</a></h2>
+Ici, l'innovation est notre quotidien.
 
 Chez TA, nous transformons les entreprises grâce au growth hacking. Nous combinons analyse de données, créativité et technologies de pointe pour accélérer votre croissance de manière exponentielle et durable. Notre approche est centrée sur des résultats mesurables. [Suivez-nous sur Facebook](lien vers Facebook)
 
